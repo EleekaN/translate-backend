@@ -6,12 +6,11 @@ import openai
 from fastapi.middleware.cors import CORSMiddleware
 
 
-os.environ.pop('OPENAI_API_KEY',None)
+# os.environ.pop('OPENAI_API_KEY',None)
 
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# print(openai.api_key)
 
 app = FastAPI()
 
